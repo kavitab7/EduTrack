@@ -21,6 +21,10 @@
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('students*') ? 'active' : '' }}" href="{{ route('students.index') }}">Students</a>
                     </li>
+                    <li class="nav-item">
+    <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}" href="{{ url('/dashboard') }}">Dashboard</a>
+</li>
+
                 </ul>
             </div>
         </div>
